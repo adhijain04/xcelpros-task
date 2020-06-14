@@ -1,0 +1,37 @@
+.sideheader-container
+  width: 2.5%
+  padding: 10px
+  height: inherit
+  +display-column
+  align-items: center
+  justify-content: space-between
+  .sideheader-logo-container, .sideheader-avatar-container
+    img
+      width: 40px
+      max-height: 40px
+      display: flex
+      border-radius: 4px
+      margin-bottom: 20px
+      margin-top: 10px
+    .icon-container
+      +display-column
+      align-items: center
+      i
+        color: $white
+        font-size: 18px
+        margin-bottom: 20px
+        padding: 10px
+        border-radius: 50%
+        &:hover
+          cursor: pointer
+          background: $sideheader-dark
+  .sideheader-avatar-container
+    .avatar-name
+      padding: 10px
+      color: $white
+      font-size: 18px
+      font-weight: bold
+      text-align: center
+      border-radius: 50%
+      background: $avatar
+      border: solid 2px $white

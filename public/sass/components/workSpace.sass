@@ -1,0 +1,66 @@
+.workspace-container
+  width: 15%
+  height: inherit
+  +display-column
+  justify-content: space-between
+  background: $white
+  border-top-left-radius: 20px
+  border-right: solid 1px $border
+  .workspace-top-container
+    .workspace-header
+      padding: 20px
+      .search-input-container
+        margin-top: 15px
+        i
+          color: $border
+        input
+          border: none
+          margin-left: 10px
+    .workspaces
+      .main-container
+        +display-flex
+        padding: 0 10px
+        margin-bottom: 15px
+        .main
+          +display-flex
+          .workspace-toggler
+            margin-right: 10px
+          .workspace-icon
+            color: $white
+            padding: 10px
+            background: $pink
+            margin-right: 10px
+            border-radius: 10px
+        .add-workspace
+          color: $avatar
+      p
+        padding: 10px
+        margin-left: 30px
+        border-radius: 10px
+        &:hover
+          color: $avatar
+          font-weight: bold
+          cursor: pointer
+          background: $avatar-light
+  .workspace-bottom-container
+    .dashboards-container
+      padding: 20px
+      border-top: solid 1px $border
+      border-bottom: solid 1px $border
+      h2
+        &:hover
+          color: $avatar
+          cursor: pointer
+    .download-button-container
+      padding: 20px
+      button
+        width: 100%
+        padding: 10px
+        border-radius: 10px
+        background: transparent
+        border: solid 1px $border
+        &:hover
+          cursor: pointer
+          border: solid 1px $avatar
+        .playstore
+          margin: 0 10px

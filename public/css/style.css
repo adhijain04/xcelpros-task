@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+#root {
+  height: 100vh;
+}
+#root .App {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  overflow: hidden;
+  justify-content: unset;
+  background: #292f4c;
+}
+
+.sideheader-container {
+  width: 2.5%;
+  padding: 10px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sideheader-container .sideheader-logo-container img, .sideheader-container .sideheader-avatar-container img {
+  width: 40px;
+  max-height: 40px;
+  display: flex;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.sideheader-container .sideheader-logo-container .icon-container, .sideheader-container .sideheader-avatar-container .icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sideheader-container .sideheader-logo-container .icon-container i, .sideheader-container .sideheader-avatar-container .icon-container i {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.sideheader-container .sideheader-logo-container .icon-container i:hover, .sideheader-container .sideheader-avatar-container .icon-container i:hover {
+  cursor: pointer;
+  background: #171b31;
+}
+.sideheader-container .sideheader-avatar-container .avatar-name {
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  background: #009AFF;
+  border: solid 2px #fff;
+}
+
+.workspace-container {
+  width: 15%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border-top-left-radius: 20px;
+  border-right: solid 1px #ddd;
+}
+.workspace-container .workspace-top-container .workspace-header {
+  padding: 20px;
+}
+.workspace-container .workspace-top-container .workspace-header .search-input-container {
+  margin-top: 15px;
+}
+.workspace-container .workspace-top-container .workspace-header .search-input-container i {
+  color: #ddd;
+}
+.workspace-container .workspace-top-container .workspace-header .search-input-container input {
+  border: none;
+  margin-left: 10px;
+}
+.workspace-container .workspace-top-container .workspaces .main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+.workspace-container .workspace-top-container .workspaces .main-container .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.workspace-container .workspace-top-container .workspaces .main-container .main .workspace-toggler {
+  margin-right: 10px;
+}
+.workspace-container .workspace-top-container .workspaces .main-container .main .workspace-icon {
+  color: #fff;
+  padding: 10px;
+  background: deeppink;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.workspace-container .workspace-top-container .workspaces .main-container .add-workspace {
+  color: #009AFF;
+}
+.workspace-container .workspace-top-container .workspaces p {
+  padding: 10px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+.workspace-container .workspace-top-container .workspaces p:hover {
+  color: #009AFF;
+  font-weight: bold;
+  cursor: pointer;
+  background: #0099ff3d;
+}
+.workspace-container .workspace-bottom-container .dashboards-container {
+  padding: 20px;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+}
+.workspace-container .workspace-bottom-container .dashboards-container h2:hover {
+  color: #009AFF;
+  cursor: pointer;
+}
+.workspace-container .workspace-bottom-container .download-button-container {
+  padding: 20px;
+}
+.workspace-container .workspace-bottom-container .download-button-container button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: transparent;
+  border: solid 1px #ddd;
+}
+.workspace-container .workspace-bottom-container .download-button-container button:hover {
+  cursor: pointer;
+  border: solid 1px #009AFF;
+}
+.workspace-container .workspace-bottom-container .download-button-container button .playstore {
+  margin: 0 10px;
+}
+
+.dashboard-container {
+  width: 82.5%;
+  height: inherit;
+  background: #fff;
+}
+
+.dashboard-header-container {
+  padding: 20px;
+  border-bottom: solid 1px #ddd;
+}
+.dashboard-header-container .dashboard-header .header-top, .dashboard-header-container .dashboard-header .header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-header-container .dashboard-header .header-top .dashboard-name-container .dashboard-name, .dashboard-header-container .dashboard-header .header-top .dashboard-name-container .table-name, .dashboard-header-container .dashboard-header .header-top .table-name-container .dashboard-name, .dashboard-header-container .dashboard-header .header-top .table-name-container .table-name, .dashboard-header-container .dashboard-header .header-bottom .dashboard-name-container .dashboard-name, .dashboard-header-container .dashboard-header .header-bottom .dashboard-name-container .table-name, .dashboard-header-container .dashboard-header .header-bottom .table-name-container .dashboard-name, .dashboard-header-container .dashboard-header .header-bottom .table-name-container .table-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-header-container .dashboard-header .header-top .dashboard-name-container .dashboard-name h1, .dashboard-header-container .dashboard-header .header-top .dashboard-name-container .table-name h1, .dashboard-header-container .dashboard-header .header-top .table-name-container .dashboard-name h1, .dashboard-header-container .dashboard-header .header-top .table-name-container .table-name h1, .dashboard-header-container .dashboard-header .header-bottom .dashboard-name-container .dashboard-name h1, .dashboard-header-container .dashboard-header .header-bottom .dashboard-name-container .table-name h1, .dashboard-header-container .dashboard-header .header-bottom .table-name-container .dashboard-name h1, .dashboard-header-container .dashboard-header .header-bottom .table-name-container .table-name h1 {
+  margin-right: 10px;
+}
+.dashboard-header-container .dashboard-header .header-top .dashboard-name-container .dashboard-name i, .dashboard-header-container .dashboard-header .header-top .dashboard-name-container .table-name i, .dashboard-header-container .dashboard-header .header-top .table-name-container .dashboard-name i, .dashboard-header-container .dashboard-header .header-top .table-name-container .table-name i, .dashboard-header-container .dashboard-header .header-bottom .dashboard-name-container .dashboard-name i, .dashboard-header-container .dashboard-header .header-bottom .dashboard-name-container .table-name i, .dashboard-header-container .dashboard-header .header-bottom .table-name-container .dashboard-name i, .dashboard-header-container .dashboard-header .header-bottom .table-name-container .table-name i {
+  color: #ddd;
+}
+.dashboard-header-container .dashboard-header .header-top .dashboard-name-container .description-text, .dashboard-header-container .dashboard-header .header-top .table-name-container .description-text, .dashboard-header-container .dashboard-header .header-bottom .dashboard-name-container .description-text, .dashboard-header-container .dashboard-header .header-bottom .table-name-container .description-text {
+  margin-top: 10px;
+  color: #ddd;
+}
+.dashboard-header-container .dashboard-header .header-top .dashboard-actions-container, .dashboard-header-container .dashboard-header .header-bottom .dashboard-actions-container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-header-container .dashboard-header .header-top .dashboard-actions-container div, .dashboard-header-container .dashboard-header .header-bottom .dashboard-actions-container div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-header-container .dashboard-header .header-top .dashboard-actions-container .users-container i, .dashboard-header-container .dashboard-header .header-bottom .dashboard-actions-container .users-container i {
+  color: #fff;
+  border-radius: 50%;
+  background: #000000;
+  padding: 10px 11px;
+}
+.dashboard-header-container .dashboard-header .header-top .dashboard-actions-container .plugin-container .plugin, .dashboard-header-container .dashboard-header .header-top .dashboard-actions-container .plugin-container .bot, .dashboard-header-container .dashboard-header .header-bottom .dashboard-actions-container .plugin-container .plugin, .dashboard-header-container .dashboard-header .header-bottom .dashboard-actions-container .plugin-container .bot {
+  color: #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 2px #ddd;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+.dashboard-header-container .dashboard-header .header-top .dashboard-actions-container .plugin-container .bot, .dashboard-header-container .dashboard-header .header-bottom .dashboard-actions-container .plugin-container .bot {
+  margin-left: 10px;
+}
+.dashboard-header-container .dashboard-header .header-top .dashboard-actions-container button, .dashboard-header-container .dashboard-header .header-bottom .dashboard-actions-container button {
+  padding: 10px 30px;
+  border-radius: 30px;
+  background: transparent;
+  border: solid 2px #ddd;
+}
+.dashboard-header-container .dashboard-header .header-top .dashboard-actions-container button i, .dashboard-header-container .dashboard-header .header-bottom .dashboard-actions-container button i {
+  padding: 5px;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #009AFF;
+}
+.dashboard-header-container .dashboard-header .header-top .dashboard-actions-container .activities-container, .dashboard-header-container .dashboard-header .header-bottom .dashboard-actions-container .activities-container {
+  color: #ddd;
+  border-radius: 5px;
+  border: solid 2px #ddd;
+}
+.dashboard-header-container .dashboard-header .header-top .dashboard-actions-container .activities-container .user-activity, .dashboard-header-container .dashboard-header .header-bottom .dashboard-actions-container .activities-container .user-activity {
+  padding: 10px;
+  margin-right: 10px;
+  border-right: solid 2px #ddd;
+}
+.dashboard-header-container .dashboard-header .header-top .dashboard-actions-container .activities-container .activities, .dashboard-header-container .dashboard-header .header-bottom .dashboard-actions-container .activities-container .activities {
+  padding-right: 10px;
+}
+.dashboard-header-container .dashboard-header .header-bottom {
+  margin-top: 20px;
+}
+.dashboard-header-container .dashboard-header .header-bottom .table-name-container .table-name i {
+  color: #000000;
+}
+.dashboard-header-container .dashboard-header .header-bottom .table-name-container .table-name h3 {
+  margin: 0 10px;
+}
+.dashboard-header-container .dashboard-header .header-bottom .table-actions-container {
+  width: 28%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-header-container .dashboard-header .header-bottom .table-actions-container .search-container {
+  padding: 10px;
+  border-radius: 30px;
+  border: solid 1px #ddd;
+}
+.dashboard-header-container .dashboard-header .header-bottom .table-actions-container .new-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  background: #009AFF;
+}
+.dashboard-header-container .dashboard-header .header-bottom .table-actions-container .new-item p {
+  color: #fff;
+  padding: 10px;
+  margin-right: 10px;
+  border-right: solid 1px #ddd;
+}
+.dashboard-header-container .dashboard-header .header-bottom .table-actions-container .new-item i {
+  padding: 10px 10px 10px 0;
+  color: #fff;
+}
+
+.table {
+  padding: 20px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.table .table-toggler {
+  color: #fff;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding: 4px 7px;
+  border-radius: 50%;
+  background: #009AFF;
+}
+.table .add-column {
+  margin-top: 15px;
+}
+
+.add-row {
+  padding: 10px;
+  width: fit-content;
+  color: #aaaaaa;
+  background: #ededed;
+}
+.add-row:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

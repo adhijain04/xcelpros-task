@@ -1,0 +1,87 @@
+.dashboard-header-container
+  padding: 20px
+  border-bottom: solid 1px $border
+  .dashboard-header
+    .header-top,.header-bottom
+      +display-flex
+      .dashboard-name-container, .table-name-container
+        .dashboard-name, .table-name
+          +display-flex
+          h1
+            margin-right: 10px
+          i
+            color: $border
+        .description-text
+          margin-top: 10px
+          color: $border
+      .dashboard-actions-container
+        width: 40%
+        +display-flex
+        div
+          +display-flex
+        .users-container
+          i
+            color: $white
+            border-radius: 50%
+            background: $dark
+            padding: 10px 11px
+        .plugin-container
+          .plugin, .bot
+            color:$border
+            padding: 10px
+            border-radius: 10px
+            border: solid 2px $border
+            border-top-left-radius: 30%
+            border-bottom-left-radius: 30%
+            border-top-right-radius: 30%
+            border-bottom-right-radius: 30%
+          .bot
+            margin-left: 10px
+        button
+          padding: 10px 30px
+          border-radius: 30px
+          background: transparent
+          border: solid 2px $border
+          i
+            padding: 5px
+            color: $white
+            border-radius: 50%
+            margin-right: 10px
+            background: $avatar
+        .activities-container
+          color: $border
+          border-radius: 5px
+          border: solid 2px $border
+          .user-activity
+            padding: 10px
+            margin-right: 10px
+            border-right: solid 2px $border
+          .activities
+            padding-right: 10px
+    .header-bottom
+      margin-top: 20px
+      .table-name-container
+        .table-name
+          i
+            color: $dark
+          h3
+            margin: 0 10px
+      .table-actions-container
+        width: 28%
+        +display-flex
+        .search-container
+          padding: 10px
+          border-radius: 30px
+          border: solid 1px $border
+        .new-item
+          +display-flex
+          border-radius: 30px
+          background: $avatar
+          p
+            color: $white
+            padding: 10px
+            margin-right: 10px
+            border-right: solid 1px $border
+          i
+            padding: 10px 10px 10px 0
+            color: $white
